@@ -45,8 +45,10 @@
 
           <p class="mt-10 text-center text-sm text-gray-500">
             Don't have an account? <br />
-            <a href="#" class="font-semibold leading-6 text-green-500"
-              >Sign up now</a
+            <router-link
+              to="/signup"
+              class="font-semibold leading-6 text-green-500"
+              >Sign up now</router-link
             >
           </p>
         </div>
