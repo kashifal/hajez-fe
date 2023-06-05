@@ -64,7 +64,7 @@
     </div>
     <div
       class="fixed right-0 top-0 bg-black/40 h-screen z-40 w-full"
-       @click="setSidebar"
+      @click="setSidebar"
       :class="openMenu ? 'transform block transition-all duration-100' : 'transform hidden transition-all duration-100'"
     ></div>
   </div>
@@ -73,15 +73,18 @@
 <script setup>
 import Logo from "@/svgs/Logo.vue";
 import { useAuthenticate } from "../../store/Auth";
-import { ref } from "vue";
+import { ref, computed, watch } from "vue";
 
 const openMenu = ref(false);
 
-const auth = useAuthenticate();
+import { useRouter } from "vue-router";
+const router = useRouter();
 
-const login = auth.isLoggedIn;
 
-const menuLinks = [
+
+
+
+const menuLinks = ref([
   {
     title: "Home",
     href: "/",
@@ -107,14 +110,57 @@ const menuLinks = [
     href: "/account",
     active: "false"
   }
-];
+]);
+
+
+
+const currentRoute = ref(router.currentRoute.value);
+
+watch(
+  () => router.currentRoute.value,
+  (to, from) => {
+    currentRoute.value = to;
+    menuLinks.value = [
+      {
+        title: "Home",
+        href: "/",
+        active: currentRoute.value.fullPath === "/"
+      },
+      {
+        title: "Rest House",
+        href: "/renthouse",
+        active: currentRoute.value.fullPath === "/renthouse"
+      },
+      {
+        title: "Bookings",
+        href: "/bookings",
+        active: currentRoute.value.fullPath === "/bookings"
+      },
+      {
+        title: "Reports",
+        href: "/reports",
+        active: currentRoute.value.fullPath === "/reports"
+      },
+      {
+        title: "My Account",
+        href: "/account",
+        active: currentRoute.value.fullPath === "/account"
+      }
+    ];
+    console.log(navigation.value);
+  }
+);
+
+const auth = useAuthenticate();
+
+const login = auth.isLoggedIn;
+
+
 
 const offlineLinks = [];
 
-
-function setSidebar(){ 
-    openMenu.value = !openMenu.value;
- 
+function setSidebar() {
+  openMenu.value = !openMenu.value;
 }
 </script>
 
