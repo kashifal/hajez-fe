@@ -14,7 +14,7 @@
           <Card  :icon="Lang" text="Language "  classes="w-full"/>
         </div>
       </div>
-      <div class="hidden lg:flex items-center justify-end">
+      <div class="hidden lg:flex items-center  justify-end">
       <ReadingSvg />
       </div>
     </div>
