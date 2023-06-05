@@ -2,8 +2,8 @@
   <div class="max-w-7xl px-6 mx-auto md:mt-20 mt-16 py-12 lg:px-8">
     <div class="w-full">
       <div class="mt-4">
-        <div class="flex items-center justify-between">
-          <h1 class="text-lg lg:text-left text-center text-gray-900">Reports</h1>
+        <div class="flex items-center  justify-between">
+          <h1 class="text-2xl lg:text-left text-center text-gray-900">Reports</h1>
           <MonthDropdown />
         </div>
       </div>

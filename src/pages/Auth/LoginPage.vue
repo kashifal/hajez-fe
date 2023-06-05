@@ -13,7 +13,7 @@
     </div>
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-      <form @submit="onSubmit" class="space-y-6">
+      <form   class="space-y-6">
         <div>
           <label
             for="phone-number"
@@ -39,6 +39,7 @@
         <div>
           <button
             type="submit"
+            @click="setLogin"
             class="flex w-full justify-center rounded-md bg-primaryGreen px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primaryGreen/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryGreen"
           >Login</button>
         </div>
@@ -59,6 +60,11 @@
 import User from "@/svgs/User.vue";
 import { useForm } from "vue-hooks-form";
 import { ref } from "vue";
+import {useAuthenticate} from '../../store/Auth';
+import { useRouter } from 'vue-router'; 
+const router = useRouter(); 
+
+const auth = useAuthenticate();
 
 const { useField, handleSubmit } = useForm({
   defaultValues: {}
@@ -71,4 +77,11 @@ const phone = useField("phone", {
 const onSubmit = data => {
   console.log(data);
 };
+
+
+function setLogin(e){
+  e.preventDefault();
+   auth.setLogin(true);
+    router.push({ name: 'home' }); 
+}
 </script>

@@ -3,12 +3,13 @@
     <div class="w-full">
       <div class="mt-4">
         <div class="flex items-center justify-between">
-          <h1 class="text-lg lg:text-left text-center text-gray-900">Home Page</h1>
+          <h1 class="text-2xl lg:text-left text-center text-gray-900">Home Page</h1>
           <DropDown />
         </div>
       </div>
     </div>
-    <div class="my-16 grid lg:grid-cols-2">
+    <div v-if="auth.isLoggedIn === true" class="my-16 grid lg:grid-cols-2">
+    
 
       <div class="relative"> 
 
@@ -42,6 +43,10 @@
       <img :src="greenHand"   class=" -right-32     w-[450px]  top-16" alt="">
       </div>
     </div>
+    <div class=" h-[80vh] w-full flex gap-6 items-center flex-col justify-center" v-else>
+    <h1 class="text-gray-800 text-2xl">You are not logged in.</h1>
+    <router-link to="/login" class="px-8 py-2 bg-primaryGreen rounded-md text-white">Login Now</router-link>
+    </div>
   </div>
 </template>
 
@@ -57,6 +62,9 @@ import ReadingSvg from "@/svgs/ReadingSvg.vue";
 import HandSvg from "@/svgs/HandSvg.vue";
 import DropDown from "@/components/HomePageComponents/DropDown.vue";
 import greenHand from '../assets/greenhand.png';
+import {useAuthenticate} from '../store/Auth';
+
+const auth = useAuthenticate();
 
 const { useField, handleSubmit } = useForm({
   defaultValues: {}
@@ -65,6 +73,8 @@ const { useField, handleSubmit } = useForm({
 const phone = useField("phone", {
   rule: { required: true }
 });
+
+
 
 const onSubmit = data => {
   console.log(data);
