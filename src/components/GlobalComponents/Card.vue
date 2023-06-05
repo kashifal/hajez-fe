@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="[`lg:w-64 py-6 relative duration-200 pl-6 bg-white shadow-sm transition-all border-b-4 border-transparent hover:border-primaryGreen, ${classes}`]"
+    :class="[`lg:w-64 py-6 relative duration-200 pl-6 bg-white hover:border-primaryGreen shadow-sm transition-all border-b-4 border-transparent , ${classes}`]"
   >
     <component :is="icon" class="h-8 w-8" />
     <p class="leading-snug mt-4">{{ text }}</p>

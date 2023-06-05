@@ -8,7 +8,7 @@
           <router-link to="#" class="text-primaryGreen border-b border-primaryGreen">Kashif Sulehria</router-link>
         </h1>
         <div class="lg:grid lg:grid-cols-2  flex flex-col items-center mt-24 gap-y-8">
-          <Card :icon="UserSvg" text="Edit your information" classes="w-full" />
+          <Card :icon="UserSvg" text="Edit your information" classes="w-full " />
           <Card :icon="PaymentSvg" text="Payments" classes="w-full"/>
           <Card  :icon="NoteSvg" text="Terms and conditions " classes="w-full"/>
           <Card  :icon="Lang" text="Language "  classes="w-full"/>
