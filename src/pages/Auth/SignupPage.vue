@@ -1,7 +1,7 @@
 
 <template>
   <div
-    class="flex flex-1 flex-col justify-center max-w-4xl px-6 md:bg-white mx-auto md:mt-48 mt-16 py-12 lg:px-8"
+    class="flex flex-1 flex-col justify-center max-w-4xl px-6 md:bg-white mx-auto md:mt-20 mt-16 py-12 lg:px-8"
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-full flex flex-col">
       <div class="mx-auto h-10 inline-flex w-auto">
@@ -14,14 +14,13 @@
     </div>
 
     <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-full">
-      <form @submit="onSubmit" class=" grid md:grid-cols-2 grid-cols-1 w-full gap-6">
+      <form @submit="onSubmit" class="grid md:grid-cols-2 grid-cols-1 w-full gap-6">
         <div class="md:col-span-1 col-span-2">
           <label
             for="phone-number"
             class="block text-medium font-normal leading-6 text-gray-900"
           >Company Name</label>
           <div class="relative mt-2 rounded-md shadow-sm">
-            
             <input
               type="text"
               name="compmay"
@@ -39,7 +38,6 @@
             class="block text-medium font-normal leading-6 text-gray-900"
           >Email</label>
           <div class="relative mt-2 rounded-md shadow-sm">
-            
             <input
               type="email"
               name="compmay"
@@ -57,7 +55,6 @@
             class="block text-medium font-normal leading-6 text-gray-900"
           >First Name</label>
           <div class="relative mt-2 rounded-md shadow-sm">
-            
             <input
               type="text"
               name="compmay"
@@ -75,7 +72,6 @@
             class="block text-medium font-normal leading-6 text-gray-900"
           >Last Name</label>
           <div class="relative mt-2 rounded-md shadow-sm">
-            
             <input
               type="text"
               name="compmay"
@@ -93,7 +89,6 @@
             class="block text-medium font-normal leading-6 text-gray-900"
           >Adress</label>
           <div class="relative mt-2 rounded-md shadow-sm">
-            
             <input
               type="text"
               name="compmay"
@@ -106,7 +101,7 @@
           </div>
         </div>
 
-        <div class=" col-span-2">
+        <div class="col-span-2">
           <button
             type="submit"
             class="flex mx-auto w-56 justify-center rounded-md bg-primaryGreen px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primaryGreen/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primaryGreen"
