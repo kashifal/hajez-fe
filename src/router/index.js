@@ -4,6 +4,7 @@ import ExamplePage from '@/pages/ExamplePage.vue';
 import LoginPage from '@/pages/Auth/LoginPage.vue';
 import SignupPage from '@/pages/Auth/SignupPage.vue';
 import AccountPage from '@/pages/AccountPage.vue';
+import ReportsPage from '@/pages/ReportsPage.vue';
  
 
 const router = createRouter({
@@ -28,6 +29,11 @@ const router = createRouter({
             path: '/account',
             name: 'account',
             component: AccountPage
+        },
+        {
+            path: '/reports',
+            name: 'reports',
+            component: ReportsPage
         }
     ]
 })
