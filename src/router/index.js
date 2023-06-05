@@ -5,6 +5,7 @@ import LoginPage from '@/pages/Auth/LoginPage.vue';
 import SignupPage from '@/pages/Auth/SignupPage.vue';
 import AccountPage from '@/pages/AccountPage.vue';
 import ReportsPage from '@/pages/ReportsPage.vue';
+import NotFound from '@/pages/404.vue';
  
 
 const router = createRouter({
@@ -34,7 +35,11 @@ const router = createRouter({
             path: '/reports',
             name: 'reports',
             component: ReportsPage
-        }
+        },
+        {
+            path: '/:catchAll(.*)',
+            component: NotFound
+          }
     ]
 })
 
