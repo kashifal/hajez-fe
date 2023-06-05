@@ -38,8 +38,8 @@
           </ul>
         </div>
       </div>
-      <div class="w-full relative lg:block hidden">
-      <img :src="greenHand"   class=" -right-32    rotate-45   top-16" alt="">
+      <div class="w-full relative lg:flex items-center justify-center hidden">
+      <img :src="greenHand"   class=" -right-32     w-[450px]  top-16" alt="">
       </div>
     </div>
   </div>
