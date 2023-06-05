@@ -1,8 +1,10 @@
 <template>
   <div>
     <div>
-      <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div
+        class="flex flex-1 flex-col justify-center max-w-xl px-6 md:bg-white mx-auto md:mt-48 mt-32 py-12 mb-12 lg:px-8"
+      >
+        <div class="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col">
           <h2
             class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
           >
@@ -54,6 +56,7 @@
         </div>
       </div>
     </div>
+
     <div class="flex justify-center">All Rights Reserved @ 2022</div>
     <router-link to="/example" class="underline"
       >Go to Example Page</router-link

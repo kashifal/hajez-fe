@@ -1,7 +1,9 @@
 <template>
   <div>
     <div>
-      <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+      <div
+        class="flex flex-1 flex-col justify-center max-w-xl px-6 md:bg-white mx-auto md:mt-48 mt-32 py-12 mb-12 lg:px-8"
+      >
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2
             class="mt-10 text-center text-3xl font-bold leading-9 tracking-tight text-gray-900"
@@ -15,7 +17,9 @@
 
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form class="space-y-6" action="#" method="POST">
-            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            <div
+              class="mt-10 w-90 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
+            >
               <div class="sm:col-span-3">
                 <label
                   for="company-name"
