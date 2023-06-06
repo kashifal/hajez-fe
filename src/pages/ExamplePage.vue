@@ -2,19 +2,32 @@
   <div class="w-full h-16 shadow-sm bg-white px-6 lg:px-0">
     <div class="max-w-7xl mx-auto h-full flex items-center justify-between">
       <img src="../assets/logo.png" class="h-[2rem]" />
-      <div class="flex justify-end items-center space-x-4">
-        <router-link
-          to="/homepage"
-          class="font-semibold leading-6 text-green-500"
-          ><button
-            class="bg-green-500 text-white rounded-2xl w-[5rem] h-[2rem]"
+      <div class="hidden items-center gap-x-2 md:flex">
+        <button class="bg-green-500 text-white rounded-md">
+          <a
+            href="/"
+            class="router-link-active router-link-exact-active px-6 w-32 flex items-center justify-center rounded-md py-2 text-sm hover:bg-green-500 hover:text-white transition-all text-white bg-primaryGreen"
+            aria-current="page"
+            >Home</a
           >
-            Home
-          </button></router-link
+        </button>
+        <a
+          href="/renthouse"
+          class="px-6 w-32 flex items-center justify-center rounded-md py-2 text-sm hover:bg-green-500 hover:text-white transition-all bg-transparent"
+          >Rest House</a
+        ><a
+          href="/bookings"
+          class="px-6 w-32 flex items-center justify-center rounded-md py-2 text-sm hover:bg-green-500 hover:text-white transition-all bg-transparent"
+          >Bookings</a
+        ><a
+          href="/reports"
+          class="px-6 w-32 flex items-center justify-center rounded-md py-2 text-sm hover:bg-green-500 hover:text-white transition-all bg-transparent"
+          >Reports</a
+        ><a
+          href="/account"
+          class="px-6 w-32 flex items-center justify-center rounded-md py-2 text-sm hover:bg-green-500 hover:text-white transition-all bg-transparent"
+          >My Account</a
         >
-        <p class="flex">Rest House</p>
-        <p>Bookings</p>
-        <p>Reports</p>
         <img src="../assets/ei_user.png" />
       </div>
     </div>

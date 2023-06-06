@@ -35,7 +35,7 @@
     </div>
 
     <div class="flex items-center justify-between px-24 py-8">
-      <p class="flex flex-start font-medium">Home Page</p>
+      <p class="flex flex-start font-medium">Reports</p>
       <Menu as="div" class="relative inline-block text-left">
         <div>
           <MenuButton
@@ -149,7 +149,7 @@
           <p>Resthouse 1</p>
         </div>
       </div>
-      <img src="../assets/home.svg" class="flex justify-end" />
+      <img src="../assets/reports.png" class="flex justify-end" />
     </div>
   </div>
   <footer class="flex justify-center">All Rights Reserved @ 2022</footer>
