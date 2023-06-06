@@ -3,9 +3,15 @@
     <div class="max-w-7xl mx-auto h-full flex items-center justify-between">
       <img src="../assets/logo.png" class="h-[2rem]" />
       <div class="flex justify-end items-center space-x-4">
-        <button class="bg-green-500 text-white rounded-2xl w-[5rem] h-[2rem]">
-          Home
-        </button>
+        <router-link
+          to="/homepage"
+          class="font-semibold leading-6 text-green-500"
+          ><button
+            class="bg-green-500 text-white rounded-2xl w-[5rem] h-[2rem]"
+          >
+            Home
+          </button></router-link
+        >
         <p class="flex">Rest House</p>
         <p>Bookings</p>
         <p>Reports</p>

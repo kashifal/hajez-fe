@@ -10,16 +10,14 @@
           >
             Sign Up
           </h2>
-          <h3 class="mt-2 text-center text-2l font-bold text-gray-600">
+          <h3 class="mt-2 text-center text-2xl font-bold text-gray-600">
             Let's get you started
           </h3>
         </div>
 
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form class="space-y-6" action="#" method="POST">
-            <div
-              class="mt-10 w-90 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
-            >
+            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
               <div class="sm:col-span-3">
                 <label
                   for="company-name"

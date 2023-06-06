@@ -8,7 +8,11 @@
           <h2
             class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
           >
-            Log in
+            <router-link
+              to="/homepage"
+              class="font-semibold leading-6 text-green-500"
+              >Log in</router-link
+            >
           </h2>
         </div>
 
